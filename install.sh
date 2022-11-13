@@ -37,14 +37,16 @@ apt install -y git \
 	autoconf \
 	zsh
 
+pip3 install --upgrade pip
+
 bash git/git-config.sh
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 cp .zshrc $HOME/.zshrc
 
-cp .p10k.zsh $HOME/.p10k.zsh
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
-pip3 install --upgrade pip
+cp .p10k.zsh $HOME/.p10k.zsh
 
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /usr/local/share/zsh-syntax-highlighting
