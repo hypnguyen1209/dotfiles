@@ -1,0 +1,12 @@
+alias drm='docker rm -f'
+
+alias drmi='docker rmi -f'
+
+alias dp='docker ps'
+
+alias db='docker build'
+
+alias dr='docker run'
+
+alias off='sudo shutdown now'
+
