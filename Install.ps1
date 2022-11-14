@@ -105,5 +105,6 @@ npm i -g npm
 # Install Oh my posh
 Install-Module scoop install https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/oh-my-posh.json
 copy Microsoft.PowerShell_profile.ps1 $PROFILE
+copy my-omp.json $HOME/my-omp.json
 
 echo "Done"
